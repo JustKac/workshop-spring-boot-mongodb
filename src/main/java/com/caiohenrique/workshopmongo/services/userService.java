@@ -8,14 +8,14 @@ import org.springframework.stereotype.Service;
 
 import com.caiohenrique.workshopmongo.DTO.UserDTO;
 import com.caiohenrique.workshopmongo.domain.User;
-import com.caiohenrique.workshopmongo.repository.userRepository;
+import com.caiohenrique.workshopmongo.repository.UserRepository;
 import com.caiohenrique.workshopmongo.services.exception.ObjectNotFoundException;
 
 @Service
 public class userService {
 
 	@Autowired
-	private userRepository repo;
+	private UserRepository repo;
 
 	public List<User> findAll() {
 		return repo.findAll();
